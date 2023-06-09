@@ -1,0 +1,49 @@
+body{
+    font-family: 'Lora', serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.sectionPrincipal {
+    background-color: rgb(163, 177, 180);
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-around;
+    max-width: 768px;
+}
+
+.sectionPrincipal div{
+    flex:1;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.divFoto{
+    background-image: url(../img/fotoPerfil2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-top: 20px; /* Ajusta el espacio superior deseado */
+    padding-bottom: 20px; /* Ajusta el espacio inferior deseado */
+    margin-top: 10px; /* Ajusta el margen superior deseado */
+    margin-bottom: 10px;
+}
+
+.seccionSecundaria{
+    display:flex;
+    max-width: 768px;
+}
+
+.seccionSecundaria section{
+    flex:1;
+    flex-direction: column;
+}
+
+.conteiner{
+    max-width: 768px;
+    margin: 0 auto;
+}
