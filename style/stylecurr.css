@@ -2,6 +2,7 @@ body{
     font-family: 'Lora', serif;
     font-family: 'Mulish', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
 }
 
 .sectionPrincipal {
@@ -10,14 +11,21 @@ body{
     display: flex;
     justify-content:space-around;
     max-width: 768px;
+   
 }
 
 .sectionPrincipal div{
     flex:1;
 }
 
+.sectionPrincipal h2{
+    color:white;
+}
+
 .titulo{
     text-align: center;
+    font-size:40px;
+    color:white;
 }
 
 .divFoto{
@@ -41,9 +49,63 @@ body{
 .seccionSecundaria section{
     flex:1;
     flex-direction: column;
+    
 }
 
 .conteiner{
     max-width: 768px;
+    min-width:300px;
     margin: 0 auto;
+    
+}
+
+.conteinerBorder{
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 2%;
+    background-color: aliceblue;
+}
+
+.conteinerBorder h2{
+    font-size: 200%;
+    font-weight:900;
+}
+
+p, li {
+    font-weight: bold;
+}
+
+
+.linkcv{
+    font-weight:900;
+}
+
+.contacto{
+    margin-top:70%;
+}
+
+
+
+@media(max-width: 400px){
+    .section2 {
+        position: absolute;
+        top: 370px;
+        left: 0;
+      }
+      
+      .section1 {
+        position: absolute;
+        top: 1050px; /* Ajusta la posición vertical deseada */
+        left: 0;
+      }
+
+      .contacto{
+        margin-top:0%;
+    }
+    
+    .linkcv{
+        position: absolute;
+        top: 1470px; /* Ajusta la posición vertical deseada */
+        left: 0;
+    }
+      
 }
