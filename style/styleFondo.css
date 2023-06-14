@@ -1,0 +1,16 @@
+:root{
+    --principalFondo : rgb(205, 222, 223);
+    --secundarioFondo: rgb(219, 210, 185);
+}
+html{
+    
+    background:
+    radial-gradient(circle farthest-side at 0% 50%,var(--principalFondo) 23.5%,rgba(240,166,17,0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%,var(--secundarioFondo) 24%,rgba(240,166,17,0) 0)19px 30px,
+    linear-gradient(var(--principalFondo) 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,var(--principalFondo) 0)0 0,
+    linear-gradient(150deg,var(--principalFondo) 24%,var(--secundarioFondo) 0,var(--secundarioFondo) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--secundarioFondo) 0,var(--secundarioFondo) 76%,var(--principalFondo) 0)0 0,
+    linear-gradient(30deg,var(--principalFondo) 24%,var(--secundarioFondo) 0,var(--secundarioFondo) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--secundarioFondo) 0,var(--secundarioFondo) 76%,var(--principalFondo) 0)0 0,
+    linear-gradient(90deg,var(--secundarioFondo) 2%,var(--principalFondo) 0,var(--principalFondo) 98%,var(--secundarioFondo) 0%)0 0 var(--principalFondo);
+    background-size: 40px 60px;
+
+}

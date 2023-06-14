@@ -1,0 +1,39 @@
+.divNavPrincipal{
+    background-color: var(--principal);
+}
+
+.conteinerNav{
+    max-width: 768px;
+    margin: 0 auto;
+
+}
+
+.navPrincipal{
+    display:flex;
+    justify-content: space-around;
+}
+
+.navPrincipal a{
+    color: var(--blanco);
+    padding: 10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight:bolder;
+    transition: color 2s, background-color 0.3s;
+}
+
+.navPrincipal a:hover{
+    background-color: var(--secundario);
+    color: var(--negro);
+}
+
+@media (max-width: 768px) {
+    /*las siguientes dos etiquetas acomodan el nav para pantallas chicas*/
+    .navPrincipal{
+        display:flex;
+        flex-direction: column;
+    }
+    .navPrincipal a{
+        text-align: center;
+    } 
+}

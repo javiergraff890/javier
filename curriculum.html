@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/stylecurr.css">
+    <link rel="stylesheet" href="style/stylenav.css">
+    <link rel="stylesheet" href="style/styleFondo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Mulish:wght@200&family=Nunito+Sans:ital,wght@0,200;1,200&family=Public+Sans:wght@100&display=swap" rel="stylesheet">
@@ -13,7 +15,7 @@
 <body>
     <header>
         <div class="divNavPrincipal">
-            <nav class="navPrincipal conteiner">
+            <nav class="navPrincipal conteinerNav">
                 <a href="index.html">Inicio</a>
                 <a href="curriculum.html">Curriculum</a>
                 <a href="contacto.html">Contacto</a>
@@ -21,63 +23,70 @@
         </div>
     </header>
     <main>
-        <br>
         <div class="conteiner conteinerBorder">
             <section class="sectionPrincipal">
                 <div class="divFoto">
                 </div>
                 <div>
                     <h1 class="titulo">Javier Graff</h1>
-                    <h2>Estudiante de Ingeniería en computación</h2>
+                    <h2>Estudiante de Ingeniería en Computación</h2>
                 </div>
             </section>
     
             <div class="seccionSecundaria">
                 <section class="section1">
-                    <h2>
-                        Educación
-                    </h2>
-                    <p>
+                    <div>
+                        <h2>
+                            Educación
+                        </h2>
+                            <ul>
+                                <li>Universidad Nacional del Sur. Bahía blanca</li>
+                                <li>Escuela De Educación Secundaria Nº3 "Mariano Moreno". Huanguelén.</li>
+                            </ul>
+                    </div>
+                    <div>
+                        <h2>
+                            Extracurricular
+                        </h2>
+                            <ul>
+                                <li>Trabajos de Apicultura</li>
+                            </ul>
+                    </div>
+                    <div>
+                        <h2>Contacto</h2>
                         <ul>
-                            <li>Universidad Nacional del Sur. Bahia blanca</li>
-                            <li>Escuela De Educación Secundaria Nº3 "Mariano Moreno. Huanguelén.</li>
+                            <li>Cel: 2923 - 649285</li>
+                            <li>jjaviergraff@gmail.com</li>
+                            <li>Bahía Blanca, Buenos Aires</li>
                         </ul>
-                    </p>
-    
-                    <h2>
-                        Extracurricular
-                    </h2>
-                    <p>
-                        <ul>
-                            <li>Trabajos de Apicultura</li>
-                        </ul>
-                    </p>
-                    <h2 class="contacto">Contacto</h2>
-                    <ul>
-                        <li>Cel: 2923 - 649285</li>
-                        <li>jjaviergraff@gmail.com</li>
-                        <li>Bahia Blanca, Buenos Aires</li>
-                    </ul>
+                    </div>
+                    
+                    
                 </section>
                 <section class="section2">
-                    <h2>Sobre mi</h2>
-                    <p>
-                        Soy un estudiante del último año de Ingeniería en Computación, y estoy entusiasmado por la oportunidad de conseguir una pasantía o una primera experiencia laboral.
-                        Además de la amplia variedad de temas abordados durante mi paso por la universidad, he tenido que formar parte de diversos grupos de trabajo, en muchos casos con personas desconocidas, de los cuales me llevo muchas experiencias positivas.
-                        Tengo muchas ganas de seguir aprendiendo y de desarrollarme para lo cual me interesa poder trabajar con lo aprendido y con nuevas tecnologías.
-                        Actualmente mi carga académica consta de tres horas semanales por lo que cuento con una gran flexibilidad horaria
-                    </p>
-                    <h2>Tecnologias</h2>
-                    <p>
-                        Variedad de proyectos  actividades realizados durante el cursado de las diferentes asignaturas incluidas en el  <a href="https://servicios.uns.edu.ar/grado/plan.asp?dependen=16&carrera=186">plan de estudios</a> realizados con diferentes tecnologias, entre las cuales se encuentran
-                    </p>
-                    <ul>
-                        <li>C</li>
-                        <li>C#</li>
-                        <li>Java</li>
-                        <li>Javascript</li>
-                        <li>Python</li>
-                    </ul>
+                    <div>
+                        <h2>Sobre mi</h2>
+                        <p>
+                            Soy un estudiante del último año de Ingeniería en Computación, y estoy entusiasmado por la oportunidad de conseguir una pasantía o una primera experiencia laboral.
+                            Además de la amplia variedad de temas abordados durante mi paso por la universidad, he tenido que formar parte de diversos grupos de trabajo, en muchos casos con personas desconocidas, de los cuales me llevo muchas experiencias positivas.
+                            Tengo muchas ganas de seguir aprendiendo y de desarrollarme para lo cual me interesa poder trabajar con lo aprendido y con nuevas tecnologías.
+                            Actualmente mi carga académica consta de tres horas semanales por lo que cuento con una gran flexibilidad horaria
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Tecnologías</h2>
+                        <p>
+                            Variedad de proyectos  actividades realizados durante el cursado de las diferentes asignaturas incluidas en el  <a href="https://servicios.uns.edu.ar/grado/plan.asp?dependen=16&carrera=186">plan de estudios</a> realizados con diferentes tecnologías, entre las cuales se encuentran
+                        </p>
+                        <ul>
+                            <li>C</li>
+                            <li>C#</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    
                 </section>
             </div>
         </div>
@@ -86,7 +95,7 @@
     </main>
 
     <footer class="conteiner">
-        <a class="linkcv" href="GraffJavier.pdf">Descargar Cv</a>
+        <a class="linkcv" href="GraffJavier.pdf">Descargar CV</a>
     </footer>
 
 </body>
