@@ -115,9 +115,11 @@ body{
 
 
 @media (max-width: 768px) {
+    /*achico la imagen*/
     .foto{
         width: 400px;
     }
+    /*acomodo la fuente para que se ajuste a la imagen mas pequeña*/
     .divImagen h2{
         font-size:2rem;
         font-weight:200;
@@ -132,8 +134,22 @@ body{
     .iconofinal{
         display:none;
     }
+
+    /*las siguientes dos etiquetas acomodan el nav para pantallas chicas*/
+    .navPrincipal{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .navPrincipal a{
+        text-align: center;
+    }
+    
 }
 
+/*aplicar elemento.style= desde js establece una precedencia muy alta por lo que
+las demas caracteristicas no se pueden cambiar luego, en cambio si desde js lo que hago 
+agregar y quitar clases, esta precedencia pasa a ser baja*/
 .fuente49{
     font-size: 4.9rem;
 }
