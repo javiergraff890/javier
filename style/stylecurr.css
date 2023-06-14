@@ -3,14 +3,20 @@
     --secundario: #FFCE70;
     --blanco: #ffffff;
     --negro: #000000;
+
+    --principalFondo : rgb(205, 222, 223);
+    --secundarioFondo: rgb(219, 210, 185);
 }
 
 html {
     background:
-    linear-gradient(135deg, #3e484a 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
-    linear-gradient(225deg, #3e484a 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
-    background-color:#3e484a;
-    background-size: 64px 128px;
+radial-gradient(circle farthest-side at 0% 50%,var(--principalFondo) 23.5%,rgba(240,166,17,0) 0)21px 30px,
+radial-gradient(circle farthest-side at 0% 50%,var(--secundarioFondo) 24%,rgba(240,166,17,0) 0)19px 30px,
+linear-gradient(var(--principalFondo) 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,var(--principalFondo) 0)0 0,
+linear-gradient(150deg,var(--principalFondo) 24%,var(--secundarioFondo) 0,var(--secundarioFondo) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--secundarioFondo) 0,var(--secundarioFondo) 76%,var(--principalFondo) 0)0 0,
+linear-gradient(30deg,var(--principalFondo) 24%,var(--secundarioFondo) 0,var(--secundarioFondo) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--secundarioFondo) 0,var(--secundarioFondo) 76%,var(--principalFondo) 0)0 0,
+linear-gradient(90deg,var(--secundarioFondo) 2%,var(--principalFondo) 0,var(--principalFondo) 98%,var(--secundarioFondo) 0%)0 0 var(--principalFondo);
+background-size: 40px 60px;
 }
 
 body{

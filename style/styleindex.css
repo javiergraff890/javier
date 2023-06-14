@@ -4,19 +4,24 @@
     --blanco: #ffffff;
     --negro: #000000;
     --gris: rgba(255, 255, 255, 1);
+
+    --principalFondo : rgb(205, 222, 223);
+    --secundarioFondo: rgb(219, 210, 185);
 }
 
 
-  
 
 html{
     font-size: 62.5%;
-    /*background-image: url(../img/fondo.jpg);*/
+    background:
+    radial-gradient(circle farthest-side at 0% 50%,var(--principalFondo) 23.5%,rgba(240,166,17,0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%,var(--secundarioFondo) 24%,rgba(240,166,17,0) 0)19px 30px,
+    linear-gradient(var(--principalFondo) 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,var(--principalFondo) 0)0 0,
+    linear-gradient(150deg,var(--principalFondo) 24%,var(--secundarioFondo) 0,var(--secundarioFondo) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--secundarioFondo) 0,var(--secundarioFondo) 76%,var(--principalFondo) 0)0 0,
+    linear-gradient(30deg,var(--principalFondo) 24%,var(--secundarioFondo) 0,var(--secundarioFondo) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--secundarioFondo) 0,var(--secundarioFondo) 76%,var(--principalFondo) 0)0 0,
+    linear-gradient(90deg,var(--secundarioFondo) 2%,var(--principalFondo) 0,var(--principalFondo) 98%,var(--secundarioFondo) 0%)0 0 var(--principalFondo);
+    background-size: 40px 60px;
 
-    background-color: #e5e5f7;
-    opacity: 0.8;
-    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 10px 10px;
 }
 
 body{
@@ -25,6 +30,8 @@ body{
     font-family: 'Mulish', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
     font-family: 'Public Sans', sans-serif;
+
+   
 }
 
 .divNavPrincipal{
@@ -59,6 +66,9 @@ body{
 
 .titulo{
     text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    
 }
 
 .seccionPrincipal{
@@ -67,15 +77,6 @@ body{
 }
 
 
-
-  
-/*
-.divIcono{
-    padding-top: 2rem;
-    padding-right: 2rem;
-    opacity: 0.7;
-}
-*/
 .iconouni{
     height: 100px;
     width: 100px;
@@ -85,7 +86,6 @@ body{
 .divImagen{
     position: relative;
     opacity: 0.7;
-
 }    
 
 .iconofinal{
@@ -100,19 +100,63 @@ body{
     position: absolute;
     top: 0%;
     left:15%;
-    font-size:  5rem;
+    /*font-size:  5rem;*/
     color: rgba(255, 255, 255, 1);
     color: #000;
     text-shadow: -1px -1px 0 var(--gris), 1px -1px 0 var(--gris), -1px 1px 0 var(--gris), 1px 1px 0 var(--gris);
-
-    /*top: 2%;
-    /*left: 50%;
-    /*transform: translate(-50%, -50%);*/
-    /*background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
-    /*padding: 20px;*/
+    opacity: 1;
 }
+
+
 
 .foto{
     border-radius: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .foto{
+        width: 400px;
+    }
+    .divImagen h2{
+        font-size:2rem;
+        font-weight:200;
+        text-shadow:-0.2px -0.2px 0 var(--gris), 0.2px -0.2px 0 var(--gris), -0.2px 0.2px 0 var(--gris), 0.2px 0.2px 0 var(--gris);
+        top: 0%;
+        left:20%;
+    }
+
+    .divImagen a .sizeUNStitle{
+        font-size: 2rem;
+    }
+    .iconofinal{
+        display:none;
+    }
+}
+
+.fuente49{
+    font-size: 4.9rem;
+}
+.fuente5{
+    font-size: 5rem;
+}
+
+.fuente52{
+    font-size:5.2rem;
+}
+
+@media (max-width: 400px){
+    .foto{
+        width: 200px;
+    }
+    .divImagen h2{
+        font-size:1rem;
+        font-weight:200;
+        text-shadow:-0.2px -0.2px 0 var(--gris), 0.2px -0.2px 0 var(--gris), -0.2px 0.2px 0 var(--gris), 0.2px 0.2px 0 var(--gris);
+    }
+
+    .divImagen a .sizeUNStitle{
+        font-size: 1rem;
+    }
 
 }
