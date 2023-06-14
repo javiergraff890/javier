@@ -1,3 +1,18 @@
+:root{
+    --principal: #1464cd;
+    --secundario: #FFCE70;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html {
+    background:
+    linear-gradient(135deg, #3e484a 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+    linear-gradient(225deg, #3e484a 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+    background-color:#3e484a;
+    background-size: 64px 128px;
+}
+
 body{
     font-family: 'Lora', serif;
     font-family: 'Mulish', sans-serif;
@@ -56,7 +71,6 @@ body{
     max-width: 768px;
     min-width:300px;
     margin: 0 auto;
-    
 }
 
 .conteinerBorder{
@@ -108,4 +122,27 @@ p, li {
         left: 0;
     }
       
+}
+
+
+.divNavPrincipal{
+    background-color: var(--principal);
+}
+
+.navPrincipal{
+    display:flex;
+    justify-content: space-around;
+}
+
+.navPrincipal a{
+    color: var(--secundario);
+    padding: 10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navPrincipal a:hover{
+    background-color: var(--secundario);
+    color: var(--blanco);
 }

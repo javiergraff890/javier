@@ -1,5 +1,118 @@
 :root{
-    --principal: #64A4F5;
+    --principal: #1464cd;
     --secundario: #FFCE70;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: rgba(255, 255, 255, 1);
 }
 
+
+  
+
+html{
+    font-size: 62.5%;
+    /*background-image: url(../img/fondo.jpg);*/
+
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.divNavPrincipal{
+    background-color: var(--principal);
+}
+
+.conteiner{
+    max-width: 76.8rem;
+    margin: 0 auto;
+
+}
+
+.navPrincipal{
+    display:flex;
+    justify-content: space-around;
+}
+
+.navPrincipal a{
+    color: var(--blanco);
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight:bolder;
+    transition: color 2s, background-color 0.3s;
+
+}
+
+.navPrincipal a:hover{
+    background-color: var(--secundario);
+    color: var(--negro);
+}
+
+.titulo{
+    text-align: center;
+}
+
+.seccionPrincipal{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+  
+/*
+.divIcono{
+    padding-top: 2rem;
+    padding-right: 2rem;
+    opacity: 0.7;
+}
+*/
+.iconouni{
+    height: 100px;
+    width: 100px;
+    padding-left: 0.5rem;
+}
+
+.divImagen{
+    position: relative;
+    opacity: 0.7;
+
+}    
+
+.iconofinal{
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    filter: invert(90%);
+}
+
+.divImagen h2{
+    font-weight: 900;
+    position: absolute;
+    top: 0%;
+    left:15%;
+    font-size:  5rem;
+    color: rgba(255, 255, 255, 1);
+    color: #000;
+    text-shadow: -1px -1px 0 var(--gris), 1px -1px 0 var(--gris), -1px 1px 0 var(--gris), 1px 1px 0 var(--gris);
+
+    /*top: 2%;
+    /*left: 50%;
+    /*transform: translate(-50%, -50%);*/
+    /*background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    /*padding: 20px;*/
+}
+
+.foto{
+    border-radius: 2rem;
+
+}
