@@ -27,7 +27,7 @@
     color: var(--negro);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     /*las siguientes dos etiquetas acomodan el nav para pantallas chicas*/
     .navPrincipal{
         display:flex;

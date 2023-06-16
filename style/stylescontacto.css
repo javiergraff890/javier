@@ -1,0 +1,83 @@
+:root{
+    --principal: #1464cd;
+    --secundario: #FFCE70;
+    --grisoscuro: rgb(77, 76, 76);
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: rgba(255, 255, 255, 1);
+
+}
+
+
+
+body{
+    font-family: 'Lora', serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.formContacto{
+    width: min(400px, 90%);
+    margin: 20px auto;
+    background-color: var(--grisoscuro);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.formContacto fieldset {
+    border: none;
+}
+
+.formContacto legend{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.boton{
+    background-color: var(--principal);
+    width: 100%;
+    color: var(--blanco);
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+    border:none;
+}
+
+.boton:hover {
+    cursor:pointer;
+}
+
+
+
+.itemform{
+    margin-bottom: 10px;
+}
+
+.itemform label{
+    color:var(--blanco);
+    display:block;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.inputstext {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.itemform textarea{
+    height: 100px;
+}
+

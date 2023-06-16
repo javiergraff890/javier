@@ -5,9 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/stylescontacto.css">
+    <link rel="stylesheet" href="style/stylenav.css">
+    <link rel="stylesheet" href="style/styleFondo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Mulish:wght@200&family=Nunito+Sans:ital,wght@0,200;1,200&family=Public+Sans:wght@100&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    contacto
+    <header>
+        <div class="divNavPrincipal">
+            <nav class="navPrincipal conteinerNav">
+                <a href="index.html">Inicio</a>
+                <a href="curriculum.html">Curriculum</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <form class="formContacto">
+                <fieldset>
+                    <legend>Mensaje</legend>
+                    
+                    <div class="conteiner-formulario">
+                        <div class="itemform">
+                            <label>Nombre</label>
+                            <input class="inputstext" type="text" placeholder="Tu nombre">
+                        </div>
+                        <div class="itemform">
+                            <label>Teléfono</label>
+                            <input class="inputstext" type="tel" placeholder="Tu teléfono">
+                        </div>
+                        <div class="itemform">
+                            <label>Correo</label>
+                            <input class="inputstext" type="email" placeholder="Tu correo">
+                        </div>
+                        <div class="itemform">
+                            <label>Mensaje</label>
+                            <textarea class="inputstext" placeholder="Ingrese aquí su mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="boton" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+        </form>
+    </section>
 </body>
 </html>

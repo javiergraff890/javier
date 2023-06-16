@@ -1,7 +1,10 @@
 :root{
     --principalFondo : rgb(205, 222, 223);
     --secundarioFondo: rgb(219, 210, 185);
+
+    --gradiente1: #dfe9f3;
 }
+/*
 html{
     
     background:
@@ -13,4 +16,12 @@ html{
     linear-gradient(90deg,var(--secundarioFondo) 2%,var(--principalFondo) 0,var(--principalFondo) 98%,var(--secundarioFondo) 0%)0 0 var(--principalFondo);
     background-size: 40px 60px;
 
+}
+*/
+
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, var(--gradiente1) 0%, white 100%);
+    background-repeat: no-repeat;  
 }

@@ -49,6 +49,13 @@ body{
     margin-bottom: 10px;
 }
 
+/*tomado de www.cssmatic.com*/
+.sombra {
+    -webkit-box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
 .seccionSecundaria{
     display:flex;
     max-width: 768px;
@@ -69,7 +76,6 @@ body{
 }
 
 .conteinerBorder{
-    border: 1px solid rgb(229, 229, 229);
     border-radius: 2%;
     background-color: aliceblue;
 }
@@ -106,6 +112,7 @@ body{
         flex-direction: column-reverse;
     }
 
+
     .sectionPrincipal h2{
         color:white;
         font-size: 20px;
@@ -118,28 +125,6 @@ body{
      .seccionSecundaria h2{
         font-size: 20px;
     }
-    /*
-    .section2 {
-        position: absolute;
-        top: 370px;
-        left: 0;
-      }
-      
-      .section1 {
-        position: absolute;
-        top: 1050px; 
-        left: 0;
-      }
 
-      .contacto{
-        margin-top:0%;
-    }
-    
-    .linkcv{
-        position: absolute;
-        top: 1470px; 
-        left: 0;
-    }*/
-      
 }
 
