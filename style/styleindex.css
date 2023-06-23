@@ -159,15 +159,16 @@ en el medio de la foto*/
 /*aplicar elemento.style= desde js establece una precedencia muy alta por lo que
 las demas caracteristicas no se pueden cambiar luego, en cambio si desde js lo que hago 
 agregar y quitar clases, esta precedencia pasa a ser baja*/
+/*REPARAR ESTO, CAMBIE LOS TAMAÑOS PORQUE NO SE VEIA BIEN EN FIREFOX*/
 .fuente49{
-    font-size: 4.9rem;
+    font-size: 4.5rem;
 }
 .fuente5{
-    font-size: 5rem;
+    font-size: 4.7rem;
 }
 
 .fuente52{
-    font-size:5.2rem;
+    font-size:4.8rem;
 }
 
 @media (max-width: 400px){
