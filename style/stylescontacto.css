@@ -81,3 +81,18 @@ body{
     height: 100px;
 }
 
+.error {
+    background-color: rgb(196, 55, 55);
+    color: var(--blanco);
+    text-align: center;
+    
+    text-transform: uppercase;
+}
+
+.exitoso {
+    background-color: rgb(45, 169, 0);
+    color: var(--blanco);
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+}
