@@ -93,6 +93,6 @@ body{
     background-color: rgb(45, 169, 0);
     color: var(--blanco);
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     text-transform: uppercase;
 }

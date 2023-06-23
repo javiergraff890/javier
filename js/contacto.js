@@ -23,6 +23,12 @@ function leerDatos(evento){
 
 document.addEventListener('DOMContentLoaded', function() {
     formulario.reset();
+    
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    var parametro = urlParams.get('resultado');
+    if (parametro === 'exito')
+        mensajeExito();
   });
 
 
@@ -41,6 +47,7 @@ formulario.addEventListener('submit', function(evento){
     } else{
         formulario.submit();
         formulario.reset();
+        
     }
     
     
