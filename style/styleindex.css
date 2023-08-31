@@ -4,25 +4,12 @@
     --blanco: #ffffff;
     --negro: #000000;
     --gris: rgba(255, 255, 255, 1);
-
-    /*--principalFondo : rgb(205, 222, 223);
-    --secundarioFondo: rgb(219, 210, 185);*/
 }
 
 
 
 html{
     font-size: 62.5%;
-    /*
-    background:
-    radial-gradient(circle farthest-side at 0% 50%,var(--principalFondo) 23.5%,rgba(240,166,17,0) 0)21px 30px,
-    radial-gradient(circle farthest-side at 0% 50%,var(--secundarioFondo) 24%,rgba(240,166,17,0) 0)19px 30px,
-    linear-gradient(var(--principalFondo) 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,var(--principalFondo) 0)0 0,
-    linear-gradient(150deg,var(--principalFondo) 24%,var(--secundarioFondo) 0,var(--secundarioFondo) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--secundarioFondo) 0,var(--secundarioFondo) 76%,var(--principalFondo) 0)0 0,
-    linear-gradient(30deg,var(--principalFondo) 24%,var(--secundarioFondo) 0,var(--secundarioFondo) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--secundarioFondo) 0,var(--secundarioFondo) 76%,var(--principalFondo) 0)0 0,
-    linear-gradient(90deg,var(--secundarioFondo) 2%,var(--principalFondo) 0,var(--principalFondo) 98%,var(--secundarioFondo) 0%)0 0 var(--principalFondo);
-    background-size: 40px 60px;*/
-
 }
 
 body{
@@ -35,34 +22,10 @@ body{
    
 }
 
-/*
-.divNavPrincipal{
-    background-color: var(--principal);
+
+.textocentral{
+    text-align: center;
 }
-
-.conteiner{
-    max-width: 76.8rem;
-    margin: 0 auto;
-
-}
-
-.navPrincipal{
-    display:flex;
-    justify-content: space-around;
-}
-
-.navPrincipal a{
-    color: var(--blanco);
-    padding: 1rem 1rem;
-    font-size: 2rem;
-    text-decoration: none;
-    font-weight:bolder;
-    transition: color 2s, background-color 0.3s;
-
-}
-*/
-
-
 
 .titulo{
     text-align: center;
@@ -74,119 +37,4 @@ body{
 .seccionPrincipal{
     display:flex;
     justify-content: center;
-}
-
-/*un pequeño ajuste para imagenes que eran de 90x90 y para
-que el diseño quede bien las deje con el tamaño de las demas*/
-.iconouni{
-    height: 100px;
-    width: 100px;
-    padding-left: 0.5rem;
-}
-
-.divImagen{
-    position: relative;
-    opacity: 0.7;
-    padding-bottom: 0.2rem;
-}    
-
-/*el icono debe ajustarse para quedar en la parte izquierda de la foto*/
-.iconofinal{
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    filter: invert(90%);
-}
-
-/*los titulos <h2> para cada seccion deben ajustarse para quedar
-en el medio de la foto*/
-.divImagen h2{
-    font-weight: 900;
-    position: absolute;
-    top: 0%;
-    left:15%;
-    color: rgba(255, 255, 255, 1);
-    color: #000;
-    text-shadow: -1px -1px 0 var(--gris), 1px -1px 0 var(--gris), -1px 1px 0 var(--gris), 1px 1px 0 var(--gris);
-    opacity: 1;
-}
-
-
-
-.foto{
-    border-radius: 2rem;
-}
-
-
-@media (max-width: 768px) {
-    /*achico la imagen*/
-    .foto{
-        width: 400px;
-    }
-    /*acomodo la fuente para que se ajuste a la imagen mas pequeña*/
-    .divImagen h2{
-        font-size:2.5rem;
-        font-weight:200;
-        
-        top: 0%;
-        left:10%;
-    }
-
-    .divImagen{
-        opacity: 1 !important;
-    }
-
-    .divImagen a .sizeUNStitle{
-        font-size: 2rem;
-    }
-    .iconofinal{
-        display:none;
-    }
-
-    /*las siguientes dos etiquetas acomodan el nav para pantallas chicas*/
-    /*
-    .navPrincipal{
-        display:flex;
-        flex-direction: column;
-        
-    }
-    .navPrincipal a{
-        text-align: center;
-    }
-    */
-}
-
-/*aplicar elemento.style= desde js establece una precedencia muy alta por lo que
-las demas caracteristicas no se pueden cambiar luego, en cambio si desde js lo que hago 
-agregar y quitar clases, esta precedencia pasa a ser baja*/
-/*REPARAR ESTO, CAMBIE LOS TAMAÑOS PORQUE NO SE VEIA BIEN EN FIREFOX*/
-.fuente49{
-    font-size: 4.5rem;
-}
-.fuente5{
-    font-size: 4.7rem;
-}
-
-.fuente52{
-    font-size:4.8rem;
-}
-
-@media (max-width: 400px){
-    .foto{
-        width: 300px;
-    }
-    .divImagen h2{
-        font-size:2rem;
-        font-weight:200;
-        top: 0%;
-        left:10%;
-    }
-    .divImagen{
-        opacity: 1 !important;
-    }
-
-    .divImagen a .sizeUNStitle{
-        font-size: 1rem;
-    }
-
 }

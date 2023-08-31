@@ -1,4 +1,4 @@
-
+/*
 const miDiv = document.getElementById('divImagen1');
 var h2Element = document.getElementById('subtituloHuang');
 
@@ -85,7 +85,7 @@ miDiv4.addEventListener('mouseover', function() {
       h2Element4.classList.add("fuente52");
       }
 });
-
+*/
 function saludar(){
     var saludo = "Buen ";
     var fechaActual = new Date();
